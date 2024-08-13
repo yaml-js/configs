@@ -10,7 +10,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yaml-js/configs"
+    "url": "git+https://github.com/yaml-js/configs",
+    "directory": "packages/eslint"
+  },
+  "bugs": {
+    "url": "https://github.com/yaml-js/configs/issues"
   },
   "homepage": "https://yaml-js.org",
   "scripts": {
