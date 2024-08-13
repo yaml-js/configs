@@ -1,0 +1,19 @@
+{
+  "name": "@yaml-js/config-eslint",
+  "version": "1.0.1",
+  "description": "yaml-js shared ESLint configuration",
+  "main": "eslint.config.js",
+  "license": "MIT",
+  "keywords": [
+    "ESLint",
+    "ESLint-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaml-js/configs"
+  },
+  "homepage": "https://yaml-js.org",
+  "scripts": {
+    "deploy": "npm publish --access=public"
+  }
+}
