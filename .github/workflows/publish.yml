@@ -7,7 +7,7 @@ on:
 jobs:
   publish_packages:
     name: Publish Packages
-    uses: yaml-js/.github/.github/workflows/jobs.initialize-ci@main
+    uses: yaml-js/.github/.github/workflows/jobs.publish.yml@main
     with:
       KEY: ${{ github.sha }}
       secrets: inherit
