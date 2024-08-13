@@ -1,0 +1,30 @@
+{
+  "name": "@yaml-js/config-editor",
+  "version": "1.0.1",
+  "description": "yaml-js shared .editorconfig file",
+  "main": ".editorconfig",
+  "files": [
+    ".editorconfig",
+    "post-install.js",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "license": "MIT",
+  "keywords": [
+    ".editorconfig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaml-js/configs",
+    "directory": "packages/editorconfig"
+  },
+  "bugs": {
+    "url": "https://github.com/yaml-js/configs/issues"
+  },
+  "homepage": "https://yaml-js.org",
+  "scripts": {
+    "deploy": "npm publish --access=public",
+    "postinstall": "node post-install.js"
+  }
+}
