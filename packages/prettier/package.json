@@ -1,16 +1,23 @@
 {
-    "name": "@yaml-js/config-prettier",
-    "version": "1.0.1",
-    "description": "yaml-js shared prettier configuration",
-    "main": "prettier.config",
-    "license": "MIT",
-    "keywords": [
-        "prettier",
-        "prettier-config"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yaml-js/configs"
-    },
-    "homepage": "https://yaml-js.org"
+  "name": "@yaml-js/config-prettier",
+  "version": "1.0.1",
+  "description": "yaml-js shared prettier configuration",
+  "main": "prettier.config",
+  "license": "MIT",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaml-js/configs",
+    "directory": "packages/prettier"
+  },
+  "bugs": {
+    "url": "https://github.com/yaml-js/configs/issues"
+  },
+  "homepage": "https://yaml-js.org",
+  "scripts": {
+    "deploy": "npm publish --access=public"
+  }
 }
