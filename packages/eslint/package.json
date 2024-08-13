@@ -19,5 +19,14 @@
   "homepage": "https://yaml-js.org",
   "scripts": {
     "deploy": "npm publish --access=public"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.35.0"
+  },
+  "devDependencies": {
+    "@types/eslint-config-prettier": "^6.11.3",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0"
   }
 }
