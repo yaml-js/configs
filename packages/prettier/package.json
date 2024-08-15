@@ -1,8 +1,8 @@
 {
   "name": "@yaml-js/config-prettier",
-  "version": "1.0.1",
+  "version": "${FROM TAG}",
   "description": "yaml-js shared prettier configuration",
-  "main": "prettier.config",
+  "main": "prettier.config.json",
   "license": "MIT",
   "keywords": [
     "prettier",
