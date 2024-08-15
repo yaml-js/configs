@@ -1,6 +1,6 @@
 {
   "name": "@yaml-js/config-editor",
-  "version": "1.0.1",
+  "version": "${FROM TAG}",
   "description": "yaml-js shared .editorconfig file",
   "main": ".editorconfig",
   "files": [

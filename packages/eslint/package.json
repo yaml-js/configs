@@ -1,6 +1,6 @@
 {
   "name": "@yaml-js/config-eslint",
-  "version": "1.0.1",
+  "version": "${FROM TAG}",
   "description": "yaml-js shared ESLint configuration",
   "main": "eslint.config.js",
   "license": "MIT",
