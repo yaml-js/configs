@@ -23,9 +23,9 @@ The repository is organized as follows:
 └── [aditional packages]
 ```
 
-- **`/packages/eslint/`**: Contains the ESLint configuration package.
-- **`/packages/prettier/`**: Contains the Prettier configuration package.
-- **`/packages/editorconfig/`**: Contains the EditorConfig package.
+- **[`/packages/eslint/`](./packages/eslint)**: Contains the ESLint configuration package.
+- **[`/packages/prettier/`](./packages/prettier)**: Contains the Prettier configuration package.
+- **[`/packages/editorconfig/`](./packages/editorconfig)**: Contains the EditorConfig package.
 
 ## Usage
 
