@@ -31,12 +31,10 @@ yarn add -D @yaml-js/config-prettier
 Add the following to your `.prettierrc` file to extend the shared configuration:
 
 ```json
-{
-  "extends": "@yaml-js/config-prettier"
-}
+"@yaml-js/config-prettier"
 ```
 
-Alternatively, you can use a prettier.config.js file:
+Alternatively, you can use a prettier.config.cjs file:
 
 ```javascript
 module.exports = {
@@ -59,22 +57,23 @@ To easily format your code, add a script in your package.json:
 Once the configuration is set up, you can format your code by running the following command:
 
 ```bash
-npm run format
+yarn run format
 ```
 
 This will apply the shared Prettier rules across your project, ensuring consistency.
 
 ### Configuration
-The @yaml-js/config-prettier package includes a set of predefined rules aimed at enforcing a consistent coding style. While it is possible to override specific rules in your .prettierrc or prettier.config.js file, please note that doing so is generally not advisable, as it contradicts the primary purpose of this package.
+The @yaml-js/config-prettier package includes a set of predefined rules aimed at enforcing a consistent coding style. While it is possible to override specific rules in your .prettierrc or prettier.config.cjs file, please note that doing so is generally not advisable, as it contradicts the primary purpose of this package.
 
 For example, to change the print width:
 
-```json
-{
-  "extends": "@yaml-js/config-prettier",
+```javascript
+module.exports = {
+  ...require("@yaml-js/config-prettier"),
   "printWidth": 100
-}
+};
 ```
+
 Refer to the Prettier documentation for a full list of available options.
 
 ### Contributing
@@ -90,7 +89,7 @@ To make changes to the shared configuration, follow these steps:
 - Submit a pull request with a clear description of the changes.
 
 ### License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 
 
