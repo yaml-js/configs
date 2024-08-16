@@ -2,11 +2,12 @@
   "name": "@yaml-js/config-prettier",
   "version": "${FROM TAG}",
   "description": "yaml-js shared prettier configuration",
-  "main": "prettier.config.json",
+  "main": "./src/index.js",
   "license": "MIT",
   "keywords": [
     "prettier",
-    "prettier-config"
+    "prettier-config",
+    "yaml-js"
   ],
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://yaml-js.org",
   "scripts": {
     "deploy": "npm publish --access=public"
+  },
+  "peerDependencies": {
+    "prettier": ">= 3.3"
   }
 }

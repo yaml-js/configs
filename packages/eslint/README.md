@@ -19,11 +19,11 @@ To use the shared ESLint configuration in your project, follow these steps:
 First, install ESLint and the `@yaml-js/config-eslint` package as development dependencies:
 
 ```bash
-npm install --save-dev @yaml-js/config-eslint
+npm install --save-dev @yaml-js/config-eslint eslint globals typescript-eslint eslint-config-prettier
 
 or
 
-yarn add -D @yaml-js/config-eslint
+yarn add -D @yaml-js/config-eslint eslint globals typescript-eslint eslint-config-prettier;
 ```
 
 ### 2. Create or update your `eslint.config.js` file
@@ -35,13 +35,7 @@ Ad add the yamljs configuration
 import configs from "@yaml-js/config-eslint";
 
 export default [
-    configs.recommended,
-    {
-        rules: {
-            "no-unused-vars": "warn",
-            "no-undef": "warn"
-        }
-    }
+ ...configs.typescript,
 ];
 ```
 
@@ -81,7 +75,7 @@ To make changes to the shared configuration, follow these steps:
 - Submit a pull request with a clear description of the changes.
 
 ### License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 
 

@@ -2,11 +2,12 @@
   "name": "@yaml-js/config-eslint",
   "version": "${FROM TAG}",
   "description": "yaml-js shared ESLint configuration",
-  "main": "eslint.config.js",
+  "main": "./src/index.js",
   "license": "MIT",
   "keywords": [
     "ESLint",
-    "ESLint-config"
+    "ESLint-config",
+    "yaml-js"
   ],
   "repository": {
     "type": "git",
@@ -20,13 +21,7 @@
   "scripts": {
     "deploy": "npm publish --access=public"
   },
-  "dependencies": {
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.35.0"
-  },
-  "devDependencies": {
-    "@types/eslint-config-prettier": "^6.11.3",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.1.0"
+  "peerDependencies": {
+    "eslint": ">= 9.9"
   }
 }
